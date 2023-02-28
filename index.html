@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/config.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>date converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <span> لطفا تاریخ مدنظر خود را برای تبدیل وارد کنید: </span>
+        <div id="input-form" class="form">
+          <div class="radio-container">
+            <div class="solar-radio radio">
+              <label for="solar-type">شمسی</label>
+              <input  id="solar-type" name="date-type" type="radio" />
+            </div>
+            <div class="AD-radio radio">
+              <label for="AD-type">میلادی</label>
+              <input id="AD-type" name="date-type" type="radio" />
+            </div>
+          </div>
+          <div class="year-input">
+            <label for="yaer-input">سال</label>
+            <input id="yaer-input" type="number" />
+          </div>
+          <div class="month-input">
+            <label for="month-input">ماه</label>
+            <input id="month-input" type="number" min="1" max="12" />
+          </div>
+          <div class="day-input">
+            <label for="day-input">روز</label>
+            <input id="day-input" type="number" min="1" max="31" />
+          </div>
+          <button id="convert">convert</button>
+        </div>
+      </div>
+      <div class="AD-monitor monitor">
+        <div>تاریخ میلادی:</div>
+        <div class="date-container">
+          <div class="year" id="AD-year"></div>
+          <div class="month" id="AD-month"></div>
+          <div class="day" id="AD-day"></div>
+        </div>
+      </div>
+      <div class="solar-monitor monitor">
+        <div>تاریخ شمسی:</div>
+        <div class="date-container">
+          <div class="year" id="solar-year"></div>
+          <div class="month" id="solar-month"></div>
+          <div class="day" id="solar-day"></div>
+        </div>
+      </div>
+      <div id="converted"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

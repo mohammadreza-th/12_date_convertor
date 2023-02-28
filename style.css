@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 800px;
+  border: 1px solid red;
+}
+
+.form {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  border: 1px solid red;
+  width: 500px;
+}
+
+input {
+  width: 60%;
+  background-color: rgb(186, 219, 186);
+}
+
+
+.form div {
+  background-color: gray;
+  padding: 5px;
+  margin: 1px;
+  white-space: nowrap;
+}
+div.radio{
+    padding: 5px 15px;
+}
+.monitor {
+  display: flex;
+}
+.date-container {
+  display: flex;
+  /* background-color: rgb(212, 212, 212); */
+  direction: ltr;
+}
+
+.year {
+  padding: 0 10px;
+  color: green;
+}
+.month {
+  padding: 0 10px;
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+.day {
+  color: red;
+  padding: 0 10px;
+}
