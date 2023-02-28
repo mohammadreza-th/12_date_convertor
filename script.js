@@ -63,7 +63,8 @@ document.getElementById("convert").addEventListener("click", () => {
     let convertedDate;
     if (data.yearType === "AD-type") {
       convertedDate = dateToSolar(data.year, data.month, data.day);
-      console.log(data.month)
+      // convertedDate = dateToSolar(2023, 2, 28);
+      console.log(data)
   }
   let viewInDOM = `<div class="monitor" >
   converted date is: ${convertedDate}

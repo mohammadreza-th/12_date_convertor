@@ -46,9 +46,7 @@ div.radio{
 }
 .month {
   padding: 0 10px;
-  color: white;
-  text-shadow: 0 0 2px black;
-}
+  color: blue;
 
 .day {
   color: red;
