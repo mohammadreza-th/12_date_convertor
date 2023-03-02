@@ -119,9 +119,8 @@ option {
 .monitor-container {
   padding: 0 5px;
   top: 388px;
-  left: 54.5%;
+  left: 56.5%;
   transform: translate(0, -50%);
-
   position: absolute;
   background-color: rgb(2, 69, 156, 0.3);
   outline: 7px solid rgb(6, 1, 54, 0.5);
@@ -134,7 +133,7 @@ option {
   font-size: 20px;
   font-weight: bold;
   color: rgba(56, 193, 252, 0.619);
-  text-shadow: 0 0 8px cyan;
+  text-shadow: 0 0 15px cyan;
 }
 
 .year {
