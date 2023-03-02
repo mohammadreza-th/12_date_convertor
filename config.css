@@ -1,9 +1,15 @@
+@font-face {
+  font-family: lotus;
+  src: url(/fonts/B-Lotus/B\ Lotus\ Bold_0.ttf);
+}
+
 body {
   direction: rtl;
 }
 
-input {
-  border: none;
-  padding: 0;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   margin: 0;
 }
