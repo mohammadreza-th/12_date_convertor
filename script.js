@@ -63,6 +63,10 @@ const daySumAD = function (year, month, day) {
 };
 
 const ADToSolar = function (year, month, day) {
+ if(daySumAD(year,month,day)===undefined){
+  return undefined
+ }
+
   if (!isNaturalNumber(year)||!isNaturalNumber(month)||!isNaturalNumber(day)){
     return;
   }
@@ -122,6 +126,7 @@ const daySumSolar = function (year, month, day) {
 };
 
 const solarToAD = function (year, month, day) {
+
   if (!isNaturalNumber(year)||!isNaturalNumber(month)||!isNaturalNumber(day)){
     return;
   }
@@ -174,6 +179,7 @@ document.getElementById("convert").addEventListener("click", () => {
     convertedDate = solarToAD(data.year, data.month, data.day);
   }
   let viewInDOM;
+  console.log(convertedDate)
   if (convertedDate === undefined) {
     viewInDOM = `<div class="solar-monitor monitor">
   <div>لطفا تاریخ مد نظرتان را به درستی وارد کنید</div>
